@@ -1,0 +1,121 @@
+body {
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 99vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  main {
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgba(223, 205, 205, 0.4);
+    margin: auto;
+    border-radius: 3vw;
+  }
+  
+  main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    opacity: 0.5;
+  }
+  
+  main > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  .kotakSVG {
+    width: 3vw;
+    height: 5.3vh;
+    background-color: #2b444c;
+    display: inline-block;
+    transform: translate(-0.3vw, 0);
+  }
+  
+  .kotakUser,
+  .kotakPassword,
+  .kotakConfirm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.7vw;
+  }
+  
+  #password,
+  #username,
+  #confirm {
+    width: 15vw;
+    height: 5.3vh;
+    background-color: #40616c;
+    margin-left: -0.3vw;
+    border: 0px;
+    color: rgb(205, 203, 203);
+    font-size: 1vw;
+    padding-left: 0.5vw;
+    display: inline-block;
+  }
+  #username::placeholder {
+    color: rgb(205, 203, 203);
+    transform: translateX(0.8vw);
+  }
+  #password::placeholder {
+    color: rgb(205, 203, 203);
+    transform: translateX(0.8vw);
+  }
+  #confirm::placeholder {
+    color: rgb(205, 203, 203);
+    transform: translateX(0.8vw);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  svg {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    transform: translateY(0.5vw);
+  }
+  
+  .kotaksubmit {
+    margin-top: 2vw;
+  }
+  
+  .submit {
+    display: block;
+    margin: auto;
+    background-color: #378098;
+    border-radius: 1vw;
+    width: 20%;
+    height: 3vw;
+    font-size: 1vw;
+  }
+  
+  .login {
+    text-align: center;
+    width: 30vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: calc(1vw+1rem);
+  }
+  
